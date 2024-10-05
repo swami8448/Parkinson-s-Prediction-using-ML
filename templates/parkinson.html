@@ -1,0 +1,167 @@
+{% extends "base.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: gray;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width:90%;
+  padding: 15px;
+  margin: 5px 0 32px 0;
+  display: inline-block;
+  border: none;
+  background: #e8e0e0;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<form action="test" method="post">
+  {% csrf_token %}
+  <div class="container">
+    <h1>Parkinson's Disease Prediction</h1>
+    <hr>
+    <table>
+        <tr>
+            <td>
+                MDVP:Fo(Hz) <input type="text" name="MDVP:Fo(Hz)" id="email" required>
+            </td>
+            <td>
+                MDVP:Fhi(Hz) <input type="text" name="MDVP:Fhi(Hz)" id="email" required>
+            </td>
+            <td>
+                MDVP:Flo(Hz) <input type="text" name="MDVP:Flo(Hz)" id="email" required>
+            </td>
+            <td>
+                MDVP:Jitter(%) <input type="text" name="MDVP:Jitter(%)" id="email" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                MDVP:Jitter(Abs) <input type="text" name="MDVP:Jitter(Abs)" id="psw" required>
+            </td>
+            <td>
+                MDVP:RAP <input type="text" name="MDVP:RAP" id="psw-repeat" required>
+            </td>
+            <td>
+                MDVP:PPQ <input type="text" name="MDVP:PPQ" id="psw" required>
+            </td>
+            <td>
+                Jitter:DDP <input type="text" name="Jitter:DDP" id="psw-repeat" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                MDVP:Shimmer <input type="text" name="MDVP:Shimmer" id="psw" required>
+            </td>
+            <td>
+                MDVP:Shimmer(db)<input type="text" name="MDVP:Shimmer(db)" id="psw-repeat" required>
+            </td>
+            <td>
+                Shimmer:APQ3<input type="text" name="Shimmer:APQ3" id="psw" required>
+            </td>
+            <td>
+                Shimmer:APQ5<input type="text" name="Shimmer:APQ5" id="psw-repeat" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                MDVP:APQ<input type="text" name="MDVP:APQ" id="psw" required>
+            </td>
+            <td>
+                Shimmer:DDA <input type="text" name="Shimmer:DDA" id="psw-repeat" required>
+            </td>
+            <td>
+                NHR <input type="text" name="NHR" id="psw" required>
+            </td>
+            <td>
+                HNR <input type="text" name="HNR" id="psw-repeat" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                RPDE <input type="text" name="RPDE" id="psw" required>
+            </td>
+            <td>
+                DFA <input type="text" name="DFA" id="psw-repeat" required>
+            </td>
+            <td>
+                spread1 <input type="text" name="spread1" id="psw" required>
+            </td>
+            <td>
+                spread2<input type="text" name="spread2" id="psw-repeat" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                D2<br><input type="text" name="D2" id="psw" required>
+            </td>
+            <td>
+                PPE <input type="text" name="PPE" id="psw-repeat" required>
+            </td>
+        </tr>
+    </table>
+    
+    <hr>
+    
+    <button type="submit" class="registerbtn">Test For Parkinson's Disease</button>
+  </div>
+  
+</form>
+
+{% endblock %}

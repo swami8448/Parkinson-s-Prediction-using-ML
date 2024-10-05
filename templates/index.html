@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<div class="container-xxl bg-white p-0">
+        <!-- Header Start -->
+        <div class="container-fluid header bg-white p-0">
+            <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
+                <div class="col-md-6 p-5 mt-lg-5">
+                    <h1 class="display-5 animated fadeIn mb-4">Parkinson’s Disease <span class="text-primary">Prediction</span></h1>
+                    <p class="animated fadeIn mb-4 pb-2">Sign In to continue. If don't have a account then Sign Up to create an account.</p>
+                    <span>
+                        <a href="signup" class="btn btn-primary py-3 px-4 me-3 animated fadeIn">Sign Up</a>
+                        <a href="signin" class="btn btn-primary py-3 px-4 me-3 animated fadeIn">Sign In</a>
+                    </span>
+                </div>
+                <div class="owl-carousel-item col-md-6">
+                    <img class="img-fluid" width="100%" src="{% static 'img/PD doctor.png' %}" alt="img1">
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- causes Start -->
+        <div class="container-xxl py-5" id="Causes">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Causes</h1>
+                    <p>Parkinson's disease is a brain disorder that causes unintended or uncontrollable movements, such as shaking, stiffness, and difficulty with balance and coordination.</p>
+                </div>
+                <div class="row g-4">
+                    <div class=" wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <h6> The most prominent signs and symptoms of Parkinson's disease occur when nerve cells in the basal ganglia, an area of the brain that controls movement, become impaired and/or die. Normally, these nerve cells, or neurons, produce an important brain chemical known as dopamine. When the neurons die or become impaired, they produce less dopamine, which causes the movement problems associated with the disease.</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <h6>People with Parkinson's disease also lose the nerve endings that produce norepinephrine, the main chemical messenger of the sympathetic nervous system, which controls many functions of the body, such as heart rate and blood pressure. The loss of norepinephrine might help explain some of the non-movement features of Parkinson's, such as fatigue, irregular blood pressure, decreased movement of food through the digestive tract, and sudden drop in blood pressure when a person stands up from a sitting or lying position.</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <h6>Some cases of Parkinson's disease appear to be hereditary, and a few cases can be traced to specific genetic variants. While genetics is thought to play a role in Parkinson's, in most cases the disease does not seem to run in families. Many researchers now believe that Parkinson's results from a combination of genetic and environmental factors, such as exposure to toxins.</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- causes End -->
+
+        <!-- Symptoms Start -->
+        <div class="container-xxl py-5" id="Symptoms">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Symptoms</h1>
+                    <p>Symptoms usually begin gradually and worsen over time. As the disease progresses, people may have difficulty walking and talking.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <h6> <br> Tremor in hands, arms, legs, jaw, or head <br><br></h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <h6>Muscle stiffness, where muscle remains contracted for a long time</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <h6>Impaired balance and coordination, sometimes leading to falls</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <h6> <br> Slowness of movement <br><br></h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <h6><br>Depression and other emotional changes</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <h6>Difficulty swallowing, chewing, and speaking<br></h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <h6><br>Urinary problems or constipation</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <h6> <br> Skin problems<br> <br></h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Symptoms End -->
+{% endblock %}
